@@ -1,0 +1,7 @@
+实现国际化步骤：
+1、找到“org.apache.struts2”包，打开“default.properties”文件，复制“struts.custom.i18n.resources”字符串
+2、将“struts.custom.i18n.resources”作为struts.xml的常量（constant）配置名，对应的value值就是资源文件的前缀，例如本例中的“bbs_2009”
+
+Action默认方法调用：
+父类ActionSupport的所有方法可以在struts2标签直接进行调用，比如本案例中的getText()可以直接获取资源文件对应的value值。
+父类ActionSupport方法查看：点开struts2开发文档，在xwork-core文件夹中可以进行查看。
