@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+ 
+<hibernate-mapping package="com.by.hibernate">
+	<class name="com.by.hibernate.Student" dynamic-update="true">
+		<id name="id">
+			<generator class="native"></generator>
+		</id>
+		<property name="name"/>
+		<property name="age"/>
+	</class>
+</hibernate-mapping>
+
+<!-- ctrl+shelf+/注释    ctrl+shelf+\取消注释 -->
